@@ -1,7 +1,12 @@
 import React from "react";
+import Header from "./HomeComponent/Header";
 
 const index = () => {
-	return <div className=" bg-red-400">home</div>;
+	return (
+		<div className="">
+			<Header />
+		</div>
+	);
 };
 
 export default index;
