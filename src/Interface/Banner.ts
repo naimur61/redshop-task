@@ -1,4 +1,7 @@
+import { StaticImageData } from "next/image";
+
 export interface IBanner {
-	img: string;
+	img: StaticImageData;
 	alt: string;
+	link: string;
 }
