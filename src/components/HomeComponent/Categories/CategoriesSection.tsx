@@ -3,10 +3,6 @@ import React from "react";
 import CategoryProducts from "./CategoryProducts";
 
 const CategoriesSection = () => {
-	// const callCategory=(payload)=>{
-
-	// }
-
 	return (
 		<div style={{ borderTop: "1px solid #D1D5DB", marginTop: "1rem" }}>
 			<div className="grid grid-cols-5 gap-4">
@@ -23,8 +19,8 @@ const CategoriesSection = () => {
 				</div>
 				<div className="col-span-4 overflow-y-auto pl-5 " style={{ borderLeft: "2px solid #D1D5DB" }}>
 					{/* Scrollable div */}
-					{CategoryInfo.map((e, i) => (
-						<CategoryProducts key={i} payload={e} />
+					{CategoryInfo.map((item, i) => (
+						<CategoryProducts key={i} payload={item} filteredData={[]} />
 					))}
 				</div>
 			</div>

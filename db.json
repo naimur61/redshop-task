@@ -1,0 +1,83 @@
+{
+	"product": [
+		{
+			"category": "IPHONE CASE",
+			"image": [{ "img1": "", "img2": "" }],
+			"name": "FOX",
+			"price": 7000,
+			"discountPercentage": 7,
+			"taxInfo": "inclusive of all taxes",
+			"compatible": "iPhone 11 Pro Max.",
+			"materials": "PC+TPU, Polyester.",
+			"dimensions": [
+				{ "Height": "161.5mm" },
+				{ "Width": " 82.5mm" },
+				{ "Depth": "11.5mm" },
+				{ "Weight": " 0.06 lbs / 0.03 kg" }
+			]
+		},
+		{
+			"category": "IPHONE CASE",
+			"image": [{ "img1": "", "img2": "" }],
+			"name": "SLEEK ZED",
+			"price": 3999,
+			"discountPercentage": 62,
+			"taxInfo": "inclusive of all taxes",
+			"compatible": "iPhone 11 Pro Max.",
+			"materials": "PC+TPU, Polyester.",
+			"dimensions": [
+				{ "Height": "161.5mm" },
+				{ "Width": " 82.5mm" },
+				{ "Depth": "11.5mm" },
+				{ "Weight": " 0.06 lbs / 0.03 kg" }
+			]
+		},
+		{
+			"category": "IPHONE CASE",
+			"image": [{ "img1": "", "img2": "" }],
+			"name": "SLEEK",
+			"price": 7000,
+			"discountPercentage": 14,
+			"taxInfo": "inclusive of all taxes",
+			"compatible": "iPhone 11 Pro Max.",
+			"materials": "PC+TPU, Polyester.",
+			"dimensions": [
+				{ "Height": "161.5mm" },
+				{ "Width": " 82.5mm" },
+				{ "Depth": "11.5mm" },
+				{ "Weight": " 0.06 lbs / 0.03 kg" }
+			]
+		},
+		{
+			"category": "IPHONE CASE",
+			"image": [{ "img1": "", "img2": "" }],
+			"name": "SLEEK",
+			"price": 5000,
+			"discountPercentage": 50,
+			"taxInfo": "inclusive of all taxes",
+			"compatible": "iPhone 11 Pro Max.",
+			"materials": "PC+TPU, Polyester.",
+			"dimensions": [
+				{ "Height": "161.5mm" },
+				{ "Width": " 82.5mm" },
+				{ "Depth": "11.5mm" },
+				{ "Weight": " 0.06 lbs / 0.03 kg" }
+			]
+		},
+
+		{
+			"id": 1,
+			"category": "POWER BANK",
+			"image": [{ "img1": "", "img2": "" }],
+			"name": "FOX IPHONE CASE",
+			"price": 7000,
+			"discountPercentage": 7,
+			"taxInfo": "inclusive of all taxes",
+			"compatible": "iPhone 11 Pro Max.",
+			"incompatible": "",
+			"types": "",
+			"materials": "PC+TPU, Polyester.",
+			"dimensions": [{ "Height": "" }, { "Width": "" }, { "Depth": "" }, { "Weight": "" }]
+		}
+	]
+}

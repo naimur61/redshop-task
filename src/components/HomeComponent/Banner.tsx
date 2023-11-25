@@ -5,7 +5,7 @@ import banner3 from "@/asset/banner/Banner_03.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { IBanner } from "@/Interface/Banner";
+import { IBanner } from "@/Interface/IBanner";
 
 const Banner = () => {
 	const settings = {

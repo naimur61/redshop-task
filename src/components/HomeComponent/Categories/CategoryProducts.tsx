@@ -1,11 +1,15 @@
+import { IProduct } from "@/Interface/IProduct";
+import { GetStaticProps, GetStaticPaths } from "next";
 import Link from "next/link";
 import { FaAngleRight } from "react-icons/fa6";
 
 interface CategoryProductsProps {
 	payload: string;
+	filteredData: IProduct[];
 }
 
-const CategoryProducts: React.FC<CategoryProductsProps> = ({ payload }) => {
+const CategoryProducts: React.FC<CategoryProductsProps> = ({ payload, filteredData }) => {
+	console.log(filteredData);
 	return (
 		<>
 			<div className="flex justify-between items-center" id={payload}>
@@ -15,14 +19,38 @@ const CategoryProducts: React.FC<CategoryProductsProps> = ({ payload }) => {
 					<FaAngleRight />
 				</Link>
 			</div>
-			<p className="my-10">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa labore tempora repudiandae esse iste?
-				Enim perferendis ducimus sequi recusandae, modi facere harum. Officiis beatae perspiciatis culpa minus
-				aliquam inventore atque non ex, architecto sint. Repudiandae, sint vero. Maiores quibusdam voluptatem
-				fugiat sed numquam quidem. Repudiandae dolore eveniet sed aliquam nulla?
-			</p>
+
+			{/* Use result data */}
+			{filteredData.map((product, i) => (
+				<div key={i}>
+					{/* Display product information here */}
+					<p>{product.name}</p>
+					<p>{product.name}</p>
+					{/* Add other product details */}
+				</div>
+			))}
 		</>
 	);
 };
 
 export default CategoryProducts;
+
+export const getStaticProps: GetStaticProps = async () => {
+	try {
+		const res = await fetch("http://localhost:5000/product");
+		const categoryData: IProduct[] = await res.json();
+		console.log("object");
+		return {
+			props: {
+				categoryData,
+			},
+		};
+	} catch (error) {
+		console.error("Error fetching data:", error);
+		return {
+			props: {
+				categoryData: [],
+			},
+		};
+	}
+};
