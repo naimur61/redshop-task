@@ -36,52 +36,54 @@ const Header = () => {
 
 	return (
 		<>
-			<div className="navbar bg-base-100 gap-4 justify-between  border border-b-2 py-3">
-				{/* Icon  */}
-				<div>
-					<Link href="/">
-						<Image src={icon} alt="logo" className=" h-8 w-20" />
-					</Link>
-				</div>
+			<div className=" border border-b-2 ">
+				<div className="navbar bg-base-100 gap-4 justify-between py-3 container mx-auto">
+					{/* Icon  */}
+					<div>
+						<Link href="/">
+							<Image src={icon} alt="logo" className=" h-8 w-20" />
+						</Link>
+					</div>
 
-				{/* Search Box  */}
-				<div className="hidden md:block"> {SearchBox} </div>
+					{/* Search Box  */}
+					<div className="hidden md:block"> {SearchBox} </div>
 
-				<div className="flex justify-between gap-4">
-					{/* Categories */}
-					<div className="hidden md:block">{Categories}</div>
+					<div className="flex justify-between gap-4">
+						{/* Categories */}
+						<div className="hidden md:block">{Categories}</div>
 
-					{/* Bag  */}
-					<div className="hidden md:block">{Bag}</div>
-				</div>
-				<div className="flex-none md:hidden block ">
-					<div className="dropdown dropdown-end">
-						{/* Menu  */}
-						<label tabIndex={0} className="hover:cursor-pointer">
-							<div className="flex-none ">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 24 24"
-									className="inline-block w-5 h-5 stroke-current"
-								>
-									<path
-										strokeLinecap="round"
-										strokeLinejoin="round"
-										strokeWidth="2"
-										d="M4 6h16M4 12h16M4 18h16"
-									></path>
-								</svg>
-							</div>
-						</label>
+						{/* Bag  */}
+						<div className="hidden md:block">{Bag}</div>
+					</div>
+					<div className="flex-none md:hidden block ">
+						<div className="dropdown dropdown-end">
+							{/* Menu  */}
+							<label tabIndex={0} className="hover:cursor-pointer">
+								<div className="flex-none ">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										className="inline-block w-5 h-5 stroke-current"
+									>
+										<path
+											strokeLinecap="round"
+											strokeLinejoin="round"
+											strokeWidth="2"
+											d="M4 6h16M4 12h16M4 18h16"
+										></path>
+									</svg>
+								</div>
+							</label>
 
-						<ul
-							tabIndex={0}
-							className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-						>
-							<li>{Categories}</li>
-							<li>{Bag}</li>
-						</ul>
+							<ul
+								tabIndex={0}
+								className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+							>
+								<li>{Categories}</li>
+								<li>{Bag}</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>

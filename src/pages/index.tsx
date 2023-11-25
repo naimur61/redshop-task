@@ -4,7 +4,7 @@ import Banner from "./HomeComponent/Banner";
 
 const index = () => {
 	return (
-		<div className="container mx-auto">
+		<div className="">
 			<Header />
 			<Banner />
 		</div>

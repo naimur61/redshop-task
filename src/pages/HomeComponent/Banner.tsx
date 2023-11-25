@@ -22,14 +22,16 @@ const Banner = () => {
 	};
 
 	return (
-		<Slider {...settings} className="carousel rounded-box">
-			{bannerInfo.map((info, i) => (
-				<div key={i} className="carousel-item">
-					<Image src={info?.img} alt={info?.alt} style={{ height: "255px" }} />
-				</div>
-			))}
-			{/* Add more carousel items as My needed */}
-		</Slider>
+		<div className="container mx-auto">
+			<Slider {...settings} className="carousel rounded-box mt-10">
+				{bannerInfo.map((info, i) => (
+					<div key={i} className="carousel-item">
+						<Image src={info?.img} alt={info?.alt} style={{ height: "255px" }} />
+					</div>
+				))}
+				{/* Add more carousel items as My needed */}
+			</Slider>
+		</div>
 	);
 };
 
