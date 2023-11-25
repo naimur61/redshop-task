@@ -1,40 +1,37 @@
 import icon from "@/asset/FLASH.png";
 import Image from "next/image";
+import Link from "next/link";
 import { BiCategoryAlt, BiSearchAlt } from "react-icons/bi";
 import { FiShoppingBag } from "react-icons/fi";
 
 const Header = () => {
 	const Categories = (
-		<>
-			<div className=" flex items-center gap-1">
+		<Link href="/categories">
+			<div className=" flex items-center gap-1 hover:cursor-pointer font-semibold">
 				<BiCategoryAlt />
 				<p>Categories</p>
 			</div>
-		</>
+		</Link>
 	);
 
 	const Bag = (
-		<>
-			<div className=" flex items-center gap-1">
-				<FiShoppingBag />
-				<p>Bag</p>
-			</div>
-		</>
+		<div className=" flex items-center gap-1  hover:cursor-pointer font-semibold">
+			<FiShoppingBag />
+			<p>Bag</p>
+		</div>
 	);
 
 	const SearchBox = (
-		<>
-			<div className="w-64 relative mx-auto">
-				<input
-					type="text"
-					placeholder="Search Product Here."
-					className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-				/>
-				<div className="absolute top-3 left-3 ">
-					<BiSearchAlt />
-				</div>
+		<div className="w-64 relative mx-auto">
+			<input
+				type="text"
+				placeholder="Search Product Here."
+				className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+			/>
+			<div className="absolute top-3 left-3 ">
+				<BiSearchAlt />
 			</div>
-		</>
+		</div>
 	);
 
 	return (
@@ -42,7 +39,9 @@ const Header = () => {
 			<div className="navbar bg-base-100 gap-4 justify-between  border border-b-2 py-3">
 				{/* Icon  */}
 				<div>
-					<Image src={icon} alt="logo" className=" h-8 w-20" />
+					<Link href="/">
+						<Image src={icon} alt="logo" className=" h-8 w-20" />
+					</Link>
 				</div>
 
 				{/* Search Box  */}
