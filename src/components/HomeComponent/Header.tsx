@@ -36,7 +36,7 @@ const Header = () => {
 
 	return (
 		<>
-			<div className=" border border-b-2 ">
+			<div className="sticky top-0 w-full z-10" style={{ borderBottom: "2px solid #D1D5DB" }}>
 				<div className="navbar bg-base-100 gap-4 justify-between py-3 container mx-auto">
 					{/* Icon  */}
 					<div>
