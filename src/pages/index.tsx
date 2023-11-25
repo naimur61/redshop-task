@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "../components/HomeComponent/Header";
 import Banner from "../components/HomeComponent/Banner";
-import CategoriesSection from "@/components/CategoriesComponent/CategoriesSection";
+import CategoriesSection from "@/components/HomeComponent/Categories/CategoriesSection";
+import Footer from "@/components/HomeComponent/Footer";
 
 const index = () => {
 	return (
@@ -9,6 +10,7 @@ const index = () => {
 			<Header />
 			<Banner />
 			<CategoriesSection />
+			<Footer />
 		</div>
 	);
 };

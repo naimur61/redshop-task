@@ -16,7 +16,7 @@ const CategoriesSection = () => {
 						<li>Categories</li>
 						{CategoryInfo.map((info, i) => (
 							<li key={i} className="mt-3">
-								<Link href={`/categories/${info}`}>{info}</Link>
+								<Link href={`#${info}`}>{info}</Link>
 							</li>
 						))}
 					</ul>
